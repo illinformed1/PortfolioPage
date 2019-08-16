@@ -29,8 +29,6 @@ const mainStyle = {
   fontFamily: "Acme, sans-serif",
   display: "flex",
 
-  marginTop: "10%",
-
   alignItems: "center",
   justifyContent: "center"
 };

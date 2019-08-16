@@ -18,15 +18,15 @@ const Developing = () => {
         >
           <LogoCircle />
 
-          <h1 style={{ fontFamily: "Caveat, cursive" }}>
-            Fork my code on Github or Check out My Codesandbox
+          <h1 style={{ fontFamily: "Caveat, cursive", marginTop: "1rem" }}>
+            Fork my code on Github <br /> or Check out my Codesandbox
           </h1>
 
           <video
             loop
             autoPlay
             style={{
-              postion: "relative",
+              marginTop: "2rem",
               height: "auto",
               width: "80%",
               border: "1px solid black"
@@ -61,7 +61,7 @@ const Developing = () => {
             loop
             autoPlay
             style={{
-              postion: "relative",
+              marginTop: "1rem",
               height: "auto",
               width: "60%",
               border: "1px solid black"

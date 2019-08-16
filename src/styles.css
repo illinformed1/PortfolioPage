@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
 
 .App {
   font-family: sans-serif;

@@ -1,4 +1,4 @@
-import React, { Fragment, useState, createRef, useRef, useEffect } from "react";
+import React from "react";
 
 import FlashUpFooter from "./components/flashUpFooter";
 import Main from "./Main";
@@ -7,36 +7,50 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 const Mobile = () => {
   return (
-    <Fragment>
-      <div style={{ width: "100%" }}>
-        <h1
-          style={{
-            fontSize: "5em",
-            marginTop: "10rem",
-            color: "#3F3F3F",
-            textAlign: "center",
-            fontFamily: "Acme, sans-serif"
-          }}
-        >
-          DEAN SCHMID
-        </h1>
-
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+        flexDirection: "column"
+      }}
+    >
+      <Router>
         <div
+          className="test"
           style={{
             display: "flex",
-            flexDirection: "row",
+            height: "4rem",
             width: "100%",
-            justifyContent: "space-evenly"
+            background: "linear-gradient(#4e76ad, #030303)"
           }}
         >
-          <Router>
-            {" "}
-            <FlashUpFooter />
-            <Main />
-          </Router>
+          {" "}
+          <FlashUpFooter />
         </div>
-      </div>
-    </Fragment>
+        <div style={{ background: "linear-gradient(#4e76ad, white)" }}>
+          <h1
+            style={{
+              fontSize: "4em",
+              marginTop: "3rem",
+              color: "#0A0F17",
+              textAlign: "center",
+              fontFamily: "Bangers, cursive",
+              letterSpacing: "0.07em"
+            }}
+          >
+            DEAN SCHMID
+          </h1>
+        </div>
+        <div
+          style={{
+            position: "relative",
+            top: "-5rem"
+          }}
+        >
+          <Main />
+        </div>
+      </Router>
+    </div>
   );
 };
 
