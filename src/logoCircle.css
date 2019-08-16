@@ -1,0 +1,196 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(12em) rotate(-0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(12em) rotate(-360deg);
+  }
+}
+
+.face {
+  position: relative;
+  border-radius: 50%;
+  height: 25em;
+  right: 1.5rem;
+}
+
+.circle-container {
+  position: relative;
+  width: 24em;
+
+  height: 24em;
+  padding: 2.8em;
+  /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+}
+.inner-container {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  margin: -2em;
+}
+
+.inner-container:hover {
+  width: 5em;
+  height: 5em;
+  transition-duration: 1s;
+}
+.inner-container img {
+  display: block;
+  width: 100%;
+}
+
+/* 12em = half the width of the wrapper */
+.deg0 {
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.deg36 {
+  animation-name: rotate36;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg72 {
+  animation-name: rotate72;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg108 {
+  animation-name: rotate108;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg144 {
+  animation-name: rotate144;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg180 {
+  animation-name: rotate180;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg216 {
+  animation-name: rotate216;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg252 {
+  animation-name: rotate252;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg288 {
+  animation-name: rotate288;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg324 {
+  animation-name: rotate324;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.deg360 {
+  transform: rotate(360deg) translate(12em) rotate(-360deg);
+}
+
+@keyframes rotate0 {
+  from {
+    transform: rotate(0deg) translate(12em) rotate(-0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(12em) rotate(-360deg);
+  }
+}
+
+@keyframes rotate36 {
+  from {
+    transform: rotate(36deg) translate(12em) rotate(-36deg);
+  }
+  to {
+    transform: rotate(396deg) translate(12em) rotate(-396deg);
+  }
+}
+
+@keyframes rotate72 {
+  from {
+    transform: rotate(72deg) translate(12em) rotate(-0deg);
+  }
+  to {
+    transform: rotate(432deg) translate(12em) rotate(-360deg);
+  }
+}
+
+@keyframes rotate108 {
+  from {
+    transform: rotate(108deg) translate(12em) rotate(-0deg);
+  }
+  to {
+    transform: rotate(468deg) translate(12em) rotate(-360deg);
+  }
+}
+
+@keyframes rotate144 {
+  from {
+    transform: rotate(144deg) translate(12em) rotate(-144deg);
+  }
+  to {
+    transform: rotate(504deg) translate(12em) rotate(-504deg);
+  }
+}
+
+@keyframes rotate180 {
+  from {
+    transform: rotate(180deg) translate(12em) rotate(-180deg);
+  }
+  to {
+    transform: rotate(540deg) translate(12em) rotate(-540deg);
+  }
+}
+
+@keyframes rotate216 {
+  from {
+    transform: rotate(216deg) translate(12em) rotate(-216deg);
+  }
+  to {
+    transform: rotate(576deg) translate(12em) rotate(-576deg);
+  }
+}
+@keyframes rotate252 {
+  from {
+    transform: rotate(252deg) translate(12em) rotate(-252deg);
+  }
+  to {
+    transform: rotate(612deg) translate(12em) rotate(-612deg);
+  }
+}
+@keyframes rotate288 {
+  from {
+    transform: rotate(288deg) translate(12em) rotate(-288deg);
+  }
+  to {
+    transform: rotate(648deg) translate(12em) rotate(-648deg);
+  }
+}
+@keyframes rotate324 {
+  from {
+    transform: rotate(324deg) translate(12em) rotate(-324deg);
+  }
+  to {
+    transform: rotate(684deg) translate(12em) rotate(-684deg);
+  }
+}
