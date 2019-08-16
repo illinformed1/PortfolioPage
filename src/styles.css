@@ -13,17 +13,6 @@
   text-align: center;
 }
 
-.nice-grey-box {
-  height: 35em;
-  width: 35em;
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-  background: white;
-}
-
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */

@@ -10,10 +10,11 @@ const Developing = () => {
       {size.width < 1080 ? (
         <div
           style={{
-            width: "100%",
+            width: "100vw",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center"
+            alignItems: "center",
+            overflow: "hidden"
           }}
         >
           <LogoCircle />
