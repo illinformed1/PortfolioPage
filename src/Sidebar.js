@@ -7,6 +7,7 @@ const SideBar = () => {
     <div
       style={{
         display: "flex",
+
         flexGrow: "1",
         flexDirection: "column"
       }}

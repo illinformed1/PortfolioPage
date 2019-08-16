@@ -1,33 +1,91 @@
 import React, { Fragment } from "react";
 import LogoCircle from "./logoCircle";
+import { useWindowSize } from "./hooks.js";
 
 const Developing = () => {
+  const size = useWindowSize();
+
   return (
     <Fragment>
-      <div style={{ display: "flex" }}>
-        <LogoCircle />
+      {size.width < 1080 ? (
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center"
+          }}
+        >
+          <LogoCircle />
 
-        <h1 style={{ fontFamily: "Caveat, cursive" }}>
-          Fork my code on Github or Check out My Codesandbox
-        </h1>
-      </div>
-      <video
-        loop
-        autoPlay
-        style={{ height: "30rem", width: "auto", border: "1px solid black" }}
-      >
-        <source src="/justinesiteportfolio.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+          <h1 style={{ fontFamily: "Caveat, cursive" }}>
+            Fork my code on Github or Check out My Codesandbox
+          </h1>
 
-      <video
-        loop
-        autoPlay
-        style={{ height: "30rem", width: "auto", border: "1px solid black" }}
-      >
-        <source src="/tagalogportfolio.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+          <video
+            loop
+            autoPlay
+            style={{
+              postion: "relative",
+              height: "auto",
+              width: "80%",
+              border: "1px solid black"
+            }}
+          >
+            <source src="/justinesiteportfolio.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <video
+            loop
+            autoPlay
+            style={{
+              marginTop: "1rem",
+              height: "auto",
+              width: "80%",
+              border: "1px solid black"
+            }}
+          >
+            <source src="/tagalogportfolio.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ) : (
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <LogoCircle />
+
+          <h1 style={{ fontFamily: "Caveat, cursive" }}>
+            Fork my code on Github or Check out My Codesandbox
+          </h1>
+          <video
+            loop
+            autoPlay
+            style={{
+              postion: "relative",
+              height: "auto",
+              width: "60%",
+              border: "1px solid black"
+            }}
+          >
+            <source src="/justinesiteportfolio.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <video
+            loop
+            autoPlay
+            style={{
+              marginTop: "1rem",
+              height: "auto",
+              width: "60%",
+              border: "1px solid black"
+            }}
+          >
+            <source src="/tagalogportfolio.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
     </Fragment>
   );
 };

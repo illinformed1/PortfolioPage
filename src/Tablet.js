@@ -2,12 +2,24 @@ import React, { Fragment, useState, createRef, useRef, useEffect } from "react";
 
 import FlashUpFooter from "./components/flashUpFooter";
 import Main from "./Main";
-
+import Routes from "./Routes";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const Mobile = () => {
+const Tablet = () => {
   return (
     <Fragment>
+      <div
+        style={{
+          position: "absolute",
+          background: "url(/blue.jpg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          width: "20rem",
+          height: "20rem",
+          top: "0",
+          left: "0"
+        }}
+      />
       <div style={{ width: "100%" }}>
         <h1
           style={{
@@ -36,8 +48,20 @@ const Mobile = () => {
           </Router>
         </div>
       </div>
+      <div
+        style={{
+          position: "fixed",
+          background: "url(/bgr.jpg)",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          width: "20rem",
+          height: "20rem",
+          bottom: "0",
+          right: "0"
+        }}
+      />
     </Fragment>
   );
 };
 
-export default Mobile;
+export default Tablet;

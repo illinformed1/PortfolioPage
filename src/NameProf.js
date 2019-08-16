@@ -51,7 +51,7 @@ const NameProf = () => {
         maxWidth: "1450px",
         left: "5vw",
 
-        border: " solid black"
+        borderRight: " solid black"
       }}
     >
       <div
