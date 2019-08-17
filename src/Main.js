@@ -11,6 +11,7 @@ import { animated, useTransition } from "react-spring";
 import Developing from "./Developing";
 import Hireme from "./Hireme";
 import Writing from "./Writing";
+import Blog from "./Blog";
 
 function useRouter() {
   return useContext(__RouterContext);
@@ -37,6 +38,7 @@ const Main = () => {
         <Route path="/hire" component={Hireme} />
         <Route path="/developing" component={Developing} />
         <Route path="/writing" component={Writing} />
+        <Route path="/blog" component={Blog} />
         />
       </Switch>
     </animated.div>

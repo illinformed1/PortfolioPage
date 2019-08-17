@@ -103,13 +103,6 @@ let FlashUpFooter = () => {
         return null;
     }
   };
-  function NavLink(props) {
-    return (
-      <li>
-        <Link style={{}} {...props} />
-      </li>
-    );
-  }
 
   /*<animated.li
               
@@ -129,15 +122,23 @@ let FlashUpFooter = () => {
               ...mainStyle
             }}
           >
-            <span>
+            <Link
+              style={{
+                display: "flex",
+
+                alignItems: "center",
+                justifyContent: "center",
+                height: "100%",
+                width: "100%",
+                textDecoration: "none",
+                color: "#3AEEFF"
+              }}
+              to={`/${item.name.toLowerCase()}`}
+            >
+              {" "}
               <i style={{ color: "#3AEEFF" }} className={`${item.icon}`} />{" "}
-              <Link
-                style={{ textDecoration: "none", color: "#3AEEFF" }}
-                to={`/${item.name.toLowerCase()}`}
-              >
-                {item.name}
-              </Link>
-            </span>
+              {item.name}
+            </Link>
           </animated.li>
         );
       })}

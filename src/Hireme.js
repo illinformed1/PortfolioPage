@@ -6,79 +6,63 @@ const Hireme = () => {
 
   return (
     <Fragment>
-      {size.width < 1080 ? (
-        <div
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center"
+        }}
+      >
+        <h1
           style={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center"
+            fontFamily: "Caveat, cursive",
+            color: "#891D34",
+            fontSize: "5em"
           }}
         >
-          <h1
-            style={{
-              fontFamily: "Caveat, cursive",
-              color: "#891D34",
-              fontSize: "5em"
-            }}
-          >
-            Hire Me For Your Next Project
-          </h1>
-          <h2
-            style={{ fontFamily: "Rock Salt, cursive", letterSpacing: "0.1em" }}
-          >
-            Responsive Web and Mobile Design
-          </h2>
-          <h2
-            style={{
-              fontFamily: "Rock Salt, cursive",
-              letterSpacing: "0.1em",
-              marginTop: "1rem"
-            }}
-          >
-            Ethereum Blockchain Developer
-          </h2>
-          <h2
-            style={{ fontFamily: "Rock Salt, cursive", letterSpacing: "0.1em" }}
-          >
-            Copy & Content Writing
-          </h2>
-          <h3 style={{ marginTop: "1rem" }}>Email: dschmid00@gmail.com</h3>
-        </div>
-      ) : (
-        <div>
-          <h1
-            style={{
-              fontFamily: "Caveat, cursive",
-              color: "#891D34",
-              fontSize: "5em"
-            }}
-          >
-            Hire Me For Your Next Project
-          </h1>
-          <h2
-            style={{ fontFamily: "Rock Salt, cursive", letterSpacing: "0.1em" }}
-          >
-            Responsive Web and Mobile Design
-          </h2>
-          <h2
-            style={{
-              fontFamily: "Rock Salt, cursive",
-              letterSpacing: "0.1em",
-              marginTop: "1rem"
-            }}
-          >
-            Ethereum Blockchain Developer
-          </h2>
-          <h2
-            style={{ fontFamily: "Rock Salt, cursive", letterSpacing: "0.1em" }}
-          >
-            Copy & Content Writing
-          </h2>
-          <h3 style={{ marginTop: "1rem" }}>Email: dschmid00@gmail.com</h3>
-        </div>
-      )}
-      )
+          Hire Me For Your Next Project
+        </h1>
+        <p
+          style={{
+            marginTop: "2rem",
+            fontFamily: "Chewy, cursive",
+            letterSpacing: "0.1em",
+            fontSize: "2rem"
+          }}
+        >
+          Responsive Web and Mobile Design
+        </p>
+        <p
+          style={{
+            fontFamily: "Carter One, cursive",
+            fontSize: "2rem",
+            letterSpacing: "0.1em"
+          }}
+        >
+          App & Dapp Developer
+        </p>
+        <p
+          style={{
+            fontFamily: "Fredericka the Great, cursive",
+            letterSpacing: "0.1em",
+            fontSize: "3em",
+            marginTop: "2rem"
+          }}
+        >
+          Copy & Content Writing
+        </p>
+        <p
+          style={{
+            fontFamily: "Racing Sans One, cursive",
+            letterSpacing: "0.1em",
+            fontSize: "2rem",
+            marginTop: "2rem"
+          }}
+        >
+          dschmid00@gmail.com
+        </p>
+      </div>
     </Fragment>
   );
 };

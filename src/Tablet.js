@@ -2,16 +2,18 @@ import React, { Fragment, useState, createRef, useRef, useEffect } from "react";
 
 import FlashUpFooter from "./components/flashUpFooter";
 import Main from "./Main";
-import Routes from "./Routes";
+
+import { useWindowSize } from "./hooks.js";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Tablet = () => {
+  const size = useWindowSize();
   return (
     <Fragment>
       <div
         style={{
           position: "absolute",
-          background: "url(/blue.jpg)",
+          background: "url(/blue.png)",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           width: "20rem",
@@ -20,11 +22,13 @@ const Tablet = () => {
           left: "0"
         }}
       />
-      <div style={{ width: "100%" }}>
+      <div
+        style={{ width: "100%", background: "linear-gradient(#4e76ad, white)" }}
+      >
         <h1
           style={{
             fontSize: "5em",
-            marginTop: "10rem",
+            padding: "10rem",
             color: "#3F3F3F",
             textAlign: "center",
             fontFamily: "Acme, sans-serif"
@@ -32,34 +36,39 @@ const Tablet = () => {
         >
           DEAN SCHMID
         </h1>
-
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            width: "100%",
-            justifyContent: "space-evenly"
-          }}
-        >
-          <Router>
-            {" "}
-            <FlashUpFooter />
-            <Main />
-          </Router>
-        </div>
       </div>
       <div
         style={{
-          position: "fixed",
-          background: "url(/bgr.jpg)",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          width: "20rem",
-          height: "20rem",
-          bottom: "0",
-          right: "0"
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+
+          justifyContent: "space-evenly"
         }}
-      />
+      >
+        <Router>
+          {" "}
+          <FlashUpFooter />
+          <Main />
+        </Router>
+      </div>
+
+      {size.height > 800 ? (
+        <div
+          style={{
+            position: "fixed",
+            background: "url(/bgr.jpg)",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            width: "20rem",
+            height: "20rem",
+            bottom: "0",
+            right: "0"
+          }}
+        />
+      ) : (
+        <></>
+      )}
     </Fragment>
   );
 };
